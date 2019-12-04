@@ -247,6 +247,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Data\" />
+    <Folder Include="Wireframes\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
