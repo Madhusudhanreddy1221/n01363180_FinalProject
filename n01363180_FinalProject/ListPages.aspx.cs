@@ -17,7 +17,6 @@ namespace n01363180_FinalProject
             //resets the result set window
             string query = "select * from pages";
             var db = new Dbconnection();
-            string searchquery=""
 
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)
