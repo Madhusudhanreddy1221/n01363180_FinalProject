@@ -1,0 +1,95 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 460px;
+}
+
+#MainContent_search_btn{
+    margin-left:20px;
+}
+#MainContent_TextBox1{
+    height:33px;
+    width:200px;
+}
+#MainContent_Table1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {
+    background-color: #f5f5f5;
+}
+#MainContent_Button1
+{   margin-top:30px;
+    float:right;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+h1{
+    display:inline-block;
+    
+}
+h2{
+    display:inline-block;
+}
+a.btn {
+  
+    margin-top: 30px;
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+#Search_bar {
+    margin-top: 30px;
+}
+#row1 {
+    margin-top: 20px;
+}
+#row2{
+    margin-top:20px;
+}
+#row3{
+    margin-top:20px;
+}
+#row4{
+    margin-top:20px;
+}
+#MainContent_Edit_btn {
+    
+    background-color: orange;
+    color: white;
+    padding: 0.7em 0.8em;
+    text-decoration: none;
+    border-radius:4px;
+}
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+            margin-top: 20px;
+        }
+
+        .body-content {
+            padding: 0;
+        }
+    }
