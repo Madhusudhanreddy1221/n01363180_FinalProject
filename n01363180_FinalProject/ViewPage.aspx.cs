@@ -31,6 +31,7 @@ namespace n01363180_FinalProject
                 pagecontent.InnerHtml = page_record.GetPageContent();
                 author.InnerHtml = "Author:"+" "+ page_record.GetPageAuthor();
                 Publishdate.InnerHtml = "Published on"+" "+page_record.GetPagePublish_Date();
+                
             }
             else
             {

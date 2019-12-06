@@ -12,12 +12,28 @@ namespace n01363180_FinalProject
     {
 
         protected void Page_Load(object sender, EventArgs e)
-        {
-           
-            //resets the result set window
-            string query = "select * from pages";
+        {   //empty string to store search key
+            string Search_Key ="";
+            //empty string to store query
+            string query = "";
+            if (Page.IsPostBack)
+            {
+              
+                Search_Key = Search_txt.Text.ToString();
+               //on post back we store keyword entered in textbox to Search_Key
+            }
+            //cheking if string is empty we display all records in th table
+            if (Search_Key == "")
+            {
+                query = "select * from pages";
+            }
+            //if string is not empty we search for the records which matches that string 
+            else
+            {
+                query = "select * from pages where pagetitle like '%" + Search_Key + "%' order by pageid";
+            }
             var db = new Dbconnection();
-
+            //printing all records one by one in a table row 
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)
             {
@@ -76,7 +92,6 @@ namespace n01363180_FinalProject
         {
             Response.Redirect("AddPages.aspx");
         }
- 
 
     }
 }
