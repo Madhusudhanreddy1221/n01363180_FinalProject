@@ -1,4 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="n01363180_FinalProject.SiteMaster" %>
+<%@ Register Src="~/WebUserControl1.ascx" TagName="WebUserControl1" TagPrefix="asp"%>
 
 <!DOCTYPE html>
 
@@ -48,11 +49,12 @@
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" runat="server" href="ListPages.aspx">Content Management System</a>
+                    
                 </div>
                 <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        
-                    </ul>
+                    
+                        <asp:WebUserControl1 runat="server"></asp:WebUserControl1>
+                    
                 </div>
             </div>
         </div>

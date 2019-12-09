@@ -114,6 +114,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Data\webapplicationdev.sql" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -130,6 +131,9 @@
     <Content Include="AddPages.aspx" />
     <Content Include="EditPage.aspx" />
     <Content Include="ViewPage.aspx" />
+    <Content Include="WebUserControl1.ascx" />
+    <Content Include="Wireframes\IMG_0853.jpg" />
+    <Content Include="Wireframes\IMG_0854.jpg" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -244,11 +248,16 @@
     <Compile Include="ViewPage.aspx.designer.cs">
       <DependentUpon>ViewPage.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Data\" />
-    <Folder Include="Wireframes\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -34,11 +34,6 @@ namespace n01363180_FinalProject
         {
             MySqlConnection Connect = new MySqlConnection(ConnectionString);
             List<Dictionary<String, String>> ResultSet = new List<Dictionary<String, String>>();
-
-            // try{} catch{} will attempt to do everything inside try{}
-            // if an error happens inside try{}, then catch{} will execute instead.
-            // very useful for debugging without the whole program crashing!
-            // this can be easily abused and should be used sparingly.
             try
             {
                 Debug.WriteLine("Connection Initialized...");
@@ -59,7 +54,6 @@ namespace n01363180_FinalProject
                         Row.Add(resultset.GetName(i), resultset.GetString(i));
 
                     }
-
                     ResultSet.Add(Row);
                 }//end row
                 resultset.Close();
@@ -70,14 +64,12 @@ namespace n01363180_FinalProject
                 Debug.WriteLine(ex.ToString());
 
             }
-
             Connect.Close();
             Debug.WriteLine("Database Connection Terminated.");
 
             return ResultSet;
         }
-
-        //Get All Pages From Database
+        //Get All Pages From Databas
         public HttpPage FindHttpPage(int id)
         {
             MySqlConnection Connect = new MySqlConnection(ConnectionString);

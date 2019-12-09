@@ -12,7 +12,6 @@ namespace n01363180_FinalProject
         protected void Page_Load(object sender, EventArgs e)
         {
             Dbconnection db = new Dbconnection();
-            //showing the base record page information
             ShowPageInfo(db);
         }
         public void ShowPageInfo(Dbconnection db)
@@ -21,11 +20,9 @@ namespace n01363180_FinalProject
             bool valid = true;
             string pageid = Request.QueryString["pageid"];
             if (String.IsNullOrEmpty(pageid)) valid = false;
-
-            //We will attempt to get the record we need
             if (valid)
             {
-
+                //finding  the page we requested by refering the function FindHttpPage in Dbconnection.cs and gets the records to display on html page
                 HttpPage page_record = db.FindHttpPage(Int32.Parse(pageid));
                 heading.InnerHtml = page_record.GetPageTitle();
                 pagecontent.InnerHtml = page_record.GetPageContent();
@@ -37,29 +34,14 @@ namespace n01363180_FinalProject
             {
                 valid = false;
             }
-
-
         }
+        //function to delete the page on button click
         public void Delete_Page(object sender, EventArgs e)
         {
-
             string pageid = Request.QueryString["pageid"];
-
-
             Dbconnection db = new Dbconnection();
-
-            //deleting the page from the system
-
-
             db.DeletePage(pageid);
             Response.Redirect("ListPages.aspx");
-
-        }
-        public void Edit_Page(object sender, EventArgs e)
-        {
-            string pageid = Request.QueryString["pageid"];
-            Response.Redirect("");
-
         }
     }
 }

@@ -37,6 +37,11 @@ namespace n01363180_FinalProject
 
             Response.Redirect("ListPages.aspx");
         }
+        public void Cancelled(object sender, EventArgs e)
+        {
+            Response.Redirect("ListPages.aspx");
+        }
 
     }
+    
 }

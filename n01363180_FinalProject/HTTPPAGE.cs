@@ -8,14 +8,13 @@ namespace n01363180_FinalProject
 {
     public class HttpPage
     {
-    
         private string PageTitle;
         private int PageId;
         private string PageContent;
         private string PageAuthor;
         private string PagePublish_Date;
 
-      
+        //Getting page Details
         public string GetPageTitle()
         {
             return PageTitle;
@@ -38,7 +37,7 @@ namespace n01363180_FinalProject
         }
 
 
-
+        //Settign Page details
         public void SetPageTitle(string value)
         {
             PageTitle = value;

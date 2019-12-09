@@ -14,7 +14,8 @@
         <asp:TextBox id="pageauthor"  Columns="70" runat="server" />
     </div>
     <div id="row4">
-        <asp:Button class="btn btn-success" OnClick="Add_Page" Text="Add Page" runat="server" />
+        <asp:Button class="btn btn-success" OnClick="Add_Page" Text="ADD PAGE" runat="server" />
+         <asp:Button class="btn btn-danger" OnClick="Cancelled" Text="CANCEL" runat="server" />
     </div>
 
 </asp:Content>

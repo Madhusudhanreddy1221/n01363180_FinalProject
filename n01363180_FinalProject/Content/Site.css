@@ -21,7 +21,7 @@ textarea {
 #MainContent_search_btn{
     margin-left:20px;
 }
-#MainContent_TextBox1{
+#MainContent_Search_txt{
     height:33px;
     width:200px;
 }
@@ -93,3 +93,4 @@ a.btn {
             padding: 0;
         }
     }
+

@@ -13,7 +13,7 @@ namespace n01363180_FinalProject
         protected void Page_Load(object sender, EventArgs e)
         {
             
-        if (!Page.IsPostBack)
+            if (!Page.IsPostBack)
             {
                 //this connection instance is for showing data
                 
@@ -67,6 +67,11 @@ namespace n01363180_FinalProject
             }
            
         }
-       
+        public void Cancelled(object sender, EventArgs e)
+        {
+            Response.Redirect("ListPages.aspx");
+        }
+
+
     }
 }

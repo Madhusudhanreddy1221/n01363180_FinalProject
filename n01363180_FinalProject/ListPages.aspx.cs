@@ -43,8 +43,9 @@ namespace n01363180_FinalProject
                 string pagecontent = row["pagebody"];
                 string pageauthor = row["author"];
                 string publish_date_time = row["Publish_Date"];
+                 
                 HtmlTableRow trow = new HtmlTableRow();
-                Dynamic_navbar.InnerHtml = "<a href=\"ViewPage.aspx?pageid=" + pageid + "\">" + pagetitle + "</a>";
+               
 
                 //1st column
                 HtmlTableCell Cell1 = new HtmlTableCell();

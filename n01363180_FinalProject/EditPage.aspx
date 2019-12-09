@@ -16,7 +16,8 @@
         </div>
         <div id="row4">
         <asp:Button class="btn btn-warning" OnClick="Update_Page" Text="UPDATE" runat="server" />
+        <asp:Button class="btn btn-danger" OnClick="Cancelled" Text="CANCEL" runat="server" />
         </div>
-    </div>
+     </div>
     <div id="Error_Msg" runat="server"></div>
 </asp:Content>
