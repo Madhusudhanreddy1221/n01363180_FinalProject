@@ -8,7 +8,12 @@ using MySql.Data.MySqlClient;
 using System.Diagnostics;
 
 namespace n01363180_FinalProject
-{
+{   /***************************************************************************************
+    *   Below Code was refeered from 
+    *   Author: Christine Bittle
+    *   Title: SCHOOLDB.CS
+    ***************************************************************************************/
+
     public class Dbconnection
     {
         private static string User { get { return "root"; } }
